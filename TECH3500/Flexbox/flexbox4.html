@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Modified Flexbox Example</title>
+    <style>
+      html {
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background: #ff5733; /* Change header background color to orange-red */
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #fff; /* Change header text color to white */
+        line-height: 100px;
+        margin: 0;
+        font-family: 'Pacifico', cursive; /* Change header font */
+        font-size: 36px; /* Increase header font size */
+      }
+
+      article {
+        padding: 20px; /* Increase padding for articles */
+        margin: 20px;
+        background: #f0f0f0; /* Change article background color to light gray */
+        border-radius: 5px; /* Add rounded corners to articles */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      }
+
+      /* Add your flexbox CSS below here */
+
+      section {
+        display: flex;
+        flex-wrap: wrap; /* Allow articles to wrap on smaller screens */
+      }
+
+      article {
+        flex: 1 300px; /* Adjust flex values to control sizing */
+      }
+
+      article:nth-of-type(3) {
+        flex: 2 300px; /* Adjust flex values for the third article */
+        display: flex;
+        flex-flow: column;
+      }
+
+      article:nth-of-type(3) div:first-child {
+        flex: 1 100px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      button {
+        flex: 1 auto;
+        margin: 5px;
+        font-size: 16px; /* Reduce button font size */
+        line-height: 1.5;
+        background: #ff5733; /* Change button background color */
+        color: #fff; /* Change button text color to white */
+        border: none; /* Remove button borders */
+        padding: 10px 15px; /* Add padding to buttons */
+        border-radius: 5px; /* Add rounded corners to buttons */
+        cursor: pointer;
+        transition: background 0.3s ease; /* Add smooth hover effect */
+      }
+
+      button:hover {
+        background: #ff8c66; /* Change button background color on hover */
+      }
+
+      p {
+        font-size: 14px; /* Adjust font size for article content */
+        color: #333; /* Change text color to dark gray */
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Modified Flexbox Example</h1>
+    </header>
+
+    <section>
+      <article>
+        <h2>Customized First Article</h2>
+
+        <p>Delight in delicious tacos, crafted with love and care. Our secret sauce will keep you coming back for more. Experience the taste sensation like never before.</p>
+      </article>
+
+      <article>
+        <h2>Unique Second Article</h2>
+
+        <p>Explore the art of taco-making with our dedicated chefs. From hand-picked ingredients to authentic flavors, we take pride in every bite you savor. Join us on a culinary journey!</p>
+      </article>
+
+      <article>
+        <div>
+          <button>Smile</button>
+          <button>Laugh</button>
+          <button>Wink</button>
+          <button>Shrug</button>
+          <button>Blush</button>
+        </div>
+        <div>
+          <p>Indulge in the finest tacos you've ever tasted. From classic to unique, we cater to all your cravings. Join us for a taco adventure that will tickle your taste buds.</p>
+        </div>
+        <div>
+          <p>Don't miss out on our weekly specials and events. Join our community of taco lovers and share your favorite taco moments with us. It's time to savor the flavor!</p>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

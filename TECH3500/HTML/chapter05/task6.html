@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+</head>
+<body>
+  <h2>Continent:</h2>
+  <input type="radio" name="where" value="1">North America<br/>
+  <input type="radio" name="where" value="2" checked>South America<br/>
+  <input type="radio" name="where" value="3">Asia<br/>
+  <input type="radio" name="where" value="4">Europe<br/>
+  <input type="radio" name="where" value="5">Africa<br/><br/>
+
+  <h2>I accept the software license</h2>
+  <input type="checkbox" name="accept" ><br/><br/>
+   
+  <h2>Where would you like to visit?</h2>
+  <input type="checkbox" name="visit" value="canada">Canada<br/>
+  <input type="checkbox" name="visit" value="france">France<br/>
+  <input type="checkbox" name="visit" value="germany">Germany<br/>
+  <input type="checkbox" name="visit" value="australia">Australia<br/>
+  <input type="checkbox" name="visit" value="japan">Japan<br/><br/>
+
+  <h2>Upload your resume in PDF format</h2>
+  <form method="post" enctype="multipart/form-data">
+     <label>Select a PDF file:</label>
+     <input type="file" name="resume" accept=".pdf" /><br/><br/>
+     <input type="submit" value="Submit" />
+  </form><br/>
+
+  <h2>Rate this photo:</h2>
+  <input type="number" min="1" max="10" name="rate" />
+  Not Impressed
+  <input type="range" min="1" max="10" step="1" name="satisfaction" />
+  Absolutely Delighted
+</body>
+</html>
